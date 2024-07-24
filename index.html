@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background-color: #bfe8acfa;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 20px 0; 
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .container.personal-info {
+            background-color: #fff;
+        }
+
+        .container.education {
+            background-color: #e8f5e9;
+        }
+
+        .container.experience {
+            background-color: #e3f2fd;
+        }
+
+        .container.interests {
+            background-color: #f3e5f5;
+        }
+        
+        .profile-pic {
+            position: absolute;
+            top: 45px;
+            left: 70%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: 250px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 0 8px rgba(0,0,0,0.4);
+        }
+        
+        .center {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        ol {
+            counter-reset: list;
+            padding-left: 20px;
+        }
+        
+        .footer {
+            background-color: #97ea50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .section-content {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>MY PORTFOLIO</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#personal-info">Personal Information</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#interests">Interests</a>
+    </div>
+
+    <div class="container personal-info">
+        <img src="C:\Users\HARI\Pictures\IMG-20231207-WA0069.jpg" alt="Profile Picture" class="profile-pic">
+        <div id="personal-info" class="center">
+            <h2>Personal Information</h2>
+        </div>
+        <ol>
+            <li><strong>Name:</strong> Hariharan K.S</li>
+            <li><strong>College:</strong> Sri Krishna College of Technology</li>
+            <li><strong>Programming Languages:</strong>
+                <ol>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>JAVA</li>
+                    <li>React</li>
+                </ol>
+            </li>\
+            <li><strong>Skills:</strong>
+                <ol>
+                    <li>Web Development: Experience in building responsive websites using HTML, CSS, and JavaScript.</li>
+                    <li>Software Development: Proficient in writing clean and efficient code in C++ and Python.</li>
+                    <li>Problem Solving: Strong analytical and problem-solving skills demonstrated through various coding challenges and projects.</li>
+                </ol>
+            </li>
+            <li><strong>Projects:</strong>
+                <ol>
+                    <li>Shopping App: Created a shopping application using React and API to display current products.</li>
+                    <li>Traveling App: Developed a traveling application using Python to manage travels.</li>
+                </ol>
+            </li>
+            <li><strong>Contact Information:</strong>
+                <ol>
+                    <li>Email: hariharan@gmail.com</li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/hariharan" target="_blank">https://www.linkedin.com/in/hariharan</a></li>
+                    <li>GitHub: <a href="https://github.com/harih3" target="_blank">https://github.com/harih3</a></li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <div class="container education">
+        <div id="education" class="section">
+            <div class="section-title">Education</div>
+            <div class="section-content">
+                <p>Bachelor of Technology (B.Tech) in Computer Science and Engineering</p>
+                <p>Sri Krishna College of Technology, Coimbatore</p>
+                <p>Graduated: May 2026</p>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container experience">
+        <div id="experience" class="section">
+            <div class="section-title">Experience</div>
+            <div class="section-content">
+                <p>Internship at ZOHO Chennai</p>
+                <p>June 2022 - June 2023</p>
+                <p>Worked on developing a web application using React and HTML</p>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container interests">
+        <div id="interests" class="section">
+            <div class="section-title">Interests</div>
+            <div class="section-content">
+                <ul>
+                    <li>Travelling</li>
+                    <li>Finding new things</li>
+                    <li>Playing cricket</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Hariharan. All rights reserved.</p>
+    </div>
+</body>
+</html>
