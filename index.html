@@ -51,28 +51,42 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 5px;
             position: relative;
+            cursor: pointer; /* Make container look clickable */
         }
 
         .container.personal-info {
             background-color: #fff;
+            cursor: default; /* Personal Info container is not clickable */
         }
 
         .container.education {
             background-color: #e8f5e9;
         }
 
+        .container.education:hover {
+            background-color: #dce892;
+        }
+
         .container.experience {
-            background-color: #e3f2fd;
+            background-color: #9ab6de;
+        }
+
+        .container.experience:hover {
+            background-color: #e67c91;
         }
 
         .container.interests {
-            background-color: #f3e5f5;
+            background-color: #75e3cd;
+        }
+
+        .container.interests:hover {
+            background-color: #e1d5e9;
         }
         
         .profile-pic {
             position: absolute;
             top: 45px;
-            left: 70%;
+            left: 80%;
             transform: translateX(-50%);
             width: 300px;
             height: 250px;
@@ -146,7 +160,7 @@
                     <li>JAVA</li>
                     <li>React</li>
                 </ol>
-            </li>\
+            </li>
             <li><strong>Skills:</strong>
                 <ol>
                     <li>Web Development: Experience in building responsive websites using HTML, CSS, and JavaScript.</li>
@@ -170,7 +184,7 @@
         </ol>
     </div>
 
-    <div class="container education">
+    <div class="container education" onclick="window.location.href='education.html'">
         <div id="education" class="section">
             <div class="section-title">Education</div>
             <div class="section-content">
@@ -181,7 +195,7 @@
         </div>
     </div>
         
-    <div class="container experience">
+    <div class="container experience" onclick="window.location.href='experience.html'">
         <div id="experience" class="section">
             <div class="section-title">Experience</div>
             <div class="section-content">
@@ -192,7 +206,7 @@
         </div>
     </div>
         
-    <div class="container interests">
+    <div class="container interests" onclick="window.location.href='interests.html'">
         <div id="interests" class="section">
             <div class="section-title">Interests</div>
             <div class="section-content">
